@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float sprint = 20.0f;
     public float xRange = 10f;
+    public float zMin = -5f;
+    public float zMax = 15f;
     public GameObject projectilePrefab;
     public InputAction fireAction;
     public InputAction sprintAction;
@@ -33,7 +35,8 @@ public class PlayerController : MonoBehaviour
             currentSpeed = sprint;
         }
 
-        transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * currentSpeed);
+        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
+        transform.Translate(moveDirection * Time.deltaTime * currentSpeed);
 
         if(transform.position.x < -xRange)
         {
@@ -42,6 +45,14 @@ public class PlayerController : MonoBehaviour
         if(transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+        if(transform.position.z < zMin)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zMin);
+        }
+        if(transform.position.z > zMax)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zMax);
         }
         if(fireAction.triggered)
         {

@@ -1,19 +1,28 @@
 # ninja log v5
-41	1333	8142990318323756	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	41328b456e84475
-60	1346	8142990318454227	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	47fb70ade728eea6
-7	1428	8142990319254130	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a42f52f7d0fc70b
-1725	1843	8142990323456073	C:/Users/HanifShhb/Music/Dazzibelle's-Unity-Projects/Pizza Hut/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/364b6i4l/obj/arm64-v8a/libgame.so	ac52b457196c0c52
-82	1410	8142990319113431	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	62f04886d3a145e0
-71	1538	8142990320415600	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ac21b79f8f6a123
-16	1365	8142990318655074	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be5bcc8a61ce6cc0
-31	1725	8142990322245271	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4efa2088b930be48
-49	1641	8142990321439251	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cdb974f24772759d
-63	1440	8142995456885670	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	41328b456e84475
-41	1443	8142995456865340	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	47fb70ade728eea6
-34	1486	8142995457308812	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be5bcc8a61ce6cc0
-84	1489	8142995457354207	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	62f04886d3a145e0
-24	1559	8142995458082295	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a42f52f7d0fc70b
-54	1618	8142995458682985	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ac21b79f8f6a123
-73	1730	8142995459808792	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cdb974f24772759d
-15	1821	8142995460661442	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4efa2088b930be48
-1821	1935	8142995461852380	C:/Users/HanifShhb/Music/Dazzibelle's-Unity-Projects/Pizza Hut/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/364b6i4l/obj/arm64-v8a/libgame.so	ac52b457196c0c52
+123	2192	8144809288329334	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	41328b456e84475
+77	2164	8144809288067409	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	47fb70ade728eea6
+10	2269	8144809289278083	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a42f52f7d0fc70b
+2734	2963	8144809296228254	C:/Users/HanifShhb/Music/Dazzibelle's-Unity-Projects/Pizza Hut/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/364b6i4l/obj/arm64-v8a/libgame.so	ac52b457196c0c52
+62	2238	8144809288976266	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	62f04886d3a145e0
+137	2433	8144809290954735	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ac21b79f8f6a123
+32	2211	8144809288494885	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be5bcc8a61ce6cc0
+21	2733	8144809293730554	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4efa2088b930be48
+92	2531	8144809291924931	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cdb974f24772759d
+90	1408	8144811272960100	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	41328b456e84475
+75	1412	8144811272970165	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	47fb70ade728eea6
+31	1423	8144811273090973	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be5bcc8a61ce6cc0
+60	1433	8144811273191239	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	62f04886d3a145e0
+6	1488	8144811273766883	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a42f52f7d0fc70b
+107	1552	8144811274428635	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ac21b79f8f6a123
+45	1659	8144811275495561	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cdb974f24772759d
+18	1757	8144811276443930	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4efa2088b930be48
+1757	1878	8144811277686050	C:/Users/HanifShhb/Music/Dazzibelle's-Unity-Projects/Pizza Hut/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/364b6i4l/obj/arm64-v8a/libgame.so	ac52b457196c0c52
+40	1343	8144816154954065	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	41328b456e84475
+27	1359	8144816155079791	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be5bcc8a61ce6cc0
+62	1374	8144816155236047	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	62f04886d3a145e0
+76	1377	8144816155271315	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	47fb70ade728eea6
+6	1422	8144816155726292	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a42f52f7d0fc70b
+89	1558	8144816157084558	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ac21b79f8f6a123
+51	1624	8144816157740042	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cdb974f24772759d
+16	1721	8144816158642122	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4efa2088b930be48
+1721	1844	8144816159942273	C:/Users/HanifShhb/Music/Dazzibelle's-Unity-Projects/Pizza Hut/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/364b6i4l/obj/arm64-v8a/libgame.so	ac52b457196c0c52

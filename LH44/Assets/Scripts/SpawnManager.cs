@@ -6,19 +6,38 @@ public class SpawnManager : MonoBehaviour
     private float spawnRange = 9;
     public int enemyCount;
     public int waveNumber = 1;
-    public GameObject powerUpPrefab;
+    public GameObject[] powerUpPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpawnEnemyWave(waveNumber);
-        Instantiate(powerUpPrefab, GenerateSpawnPosition(), powerUpPrefab.transform.rotation);
+        SpawnRandomPowerup();
     }
 
     void SpawnEnemyWave(int enemiesToSpawn)
     {
+        float waveSpeed = 2.0f;
+        float waveScale = 1.0f;
+        Color waveColor = Color.black;
+
+        if(waveNumber % 3 == 2)
+        {
+            waveSpeed = 3.5f;
+            waveScale = 0.7f;
+            waveColor = Color.red;
+        }
+        else if (waveNumber % 3 == 0)
+        {
+            waveSpeed = 2.2f;
+            waveScale = 1.6f;
+            waveColor = Color.magenta;
+        }
+
         for(int i=0; i < enemiesToSpawn; i++)
         {
-            Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
+            GameObject newEnemy = Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
+            Enemy enemyScript = newEnemy.GetComponent<Enemy>();
+            enemyScript.SetStats(waveSpeed, waveScale, waveColor);
         }
     }
 
@@ -27,8 +46,7 @@ public class SpawnManager : MonoBehaviour
     {
         float spawnPosX = Random.Range(-spawnRange, spawnRange);
         float spawnPosZ = Random.Range(-spawnRange, spawnRange);
-        Vector3 randomPos = new Vector3(spawnPosX, 0, spawnPosZ);
-        return randomPos;
+        return new Vector3(spawnPosX, 0.5f, spawnPosZ);
     }
 
     void Update()
@@ -37,8 +55,14 @@ public class SpawnManager : MonoBehaviour
         if (enemyCount == 0)
         {
             waveNumber++;
-            Instantiate(powerUpPrefab, GenerateSpawnPosition(), powerUpPrefab.transform.rotation);
             SpawnEnemyWave(waveNumber);
+            SpawnRandomPowerup();
         }
+    }
+
+    void SpawnRandomPowerup()
+    {
+        int randomIndex = Random.Range(0, powerUpPrefab.Length);
+        Instantiate(powerUpPrefab[randomIndex], GenerateSpawnPosition(), powerUpPrefab[randomIndex].transform.rotation);
     }
 }

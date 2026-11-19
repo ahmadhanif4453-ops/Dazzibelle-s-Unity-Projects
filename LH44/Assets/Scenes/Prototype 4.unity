@@ -324,7 +324,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 843433466915427728, guid: 2050905098a92384c9757c73f97e43ae, type: 3}
   enemyCount: 0
   waveNumber: 1
-  powerUpPrefab: {fileID: 5082776462361876186, guid: ad16fe22c007d3e47b1ca11eeb00bc7a, type: 3}
+  powerUpPrefab:
+  - {fileID: 5082776462361876186, guid: ad16fe22c007d3e47b1ca11eeb00bc7a, type: 3}
+  - {fileID: 2966818004921017137, guid: 96f8a8c0eb279f1498bf6dc84c8867bd, type: 3}
+  - {fileID: 686137632543486989, guid: bebf0898a99a6d14f8eff588e457c00b, type: 3}
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,8 +765,8 @@ Rigidbody:
   m_GameObject: {fileID: 1783905298}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -881,9 +884,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ee93b613d88ed46b87e60c58f5fe53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 300
+  playerSpeed: 400
   hasPowerUp: 0
   powerUpIndicator: {fileID: 2067241754}
+  currentPowerUp: 0
+  rocketPrefab: {fileID: 1692171917863198126, guid: 50303530e17c0294ca7644c0bd640417, type: 3}
+  hangTime: 0.4
+  smashSpeed: 25
+  explosionForce: 40
+  explosionRadius: 12
 --- !u!1 &2067241754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}

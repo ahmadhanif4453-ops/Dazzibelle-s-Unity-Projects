@@ -20,11 +20,14 @@ public class PlayerController : MonoBehaviour
     public float explosionRadius = 12.0f;
     private bool smashing = false;
     private float floorY;
+    public AudioClip shootSound;
+    private AudioSource playerAudio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         controls = new InputSystem_Actions();
         playerRb = GetComponent<Rigidbody>();
+        playerAudio = GetComponent<AudioSource>();
         focalPoint = GameObject.Find("Focal Point");
     }
 
@@ -98,10 +101,15 @@ public class PlayerController : MonoBehaviour
 
     void LaunchRockets()
     {
-        foreach (var enemy in FindObjectsByType<Enemy>(FindObjectsSortMode.None))
+        var enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+        foreach (var enemy in enemies)
         {
             GameObject tmpRocket = Instantiate(rocketPrefab, transform.position + Vector3.up, Quaternion.identity);
             tmpRocket.GetComponent<RocketBehaviour>().Fire(enemy.transform);
+        }
+        if (enemies.Length > 0 && shootSound != null && playerAudio != null)
+        {
+            playerAudio.PlayOneShot(shootSound, 1.0f);
         }
     }
 
